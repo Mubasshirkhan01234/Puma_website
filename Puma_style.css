@@ -2,7 +2,8 @@
     --primary-color: #8a7350;
     --secondary-color: black;
     --back-color: white;
-    --box-color: white;  
+    --box-color: white;
+    --text-color: white;  
 }
 
 body{
@@ -103,7 +104,7 @@ nav{
         padding: 0 0 15px 0;
         font-family: monospace;
         text-align: center;
-        color: white;
+        color: var(--secondary-color);
     }
 
     #firstimg_container{
