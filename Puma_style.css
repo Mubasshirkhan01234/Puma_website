@@ -95,7 +95,7 @@ nav{
         padding: 10px 0 0 0;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-align: center;
-        color: white;
+        color: white !important;
     }
 
     #yellow_block h3{
@@ -103,7 +103,7 @@ nav{
         padding: 0 0 15px 0;
         font-family: monospace;
         text-align: center;
-        color: var(--secondary-color);
+        color: white;
     }
 
     #firstimg_container{
@@ -160,7 +160,7 @@ nav{
 
     #firstimg_box a{
         text-decoration: none;
-        color: white;
+        color: white !important;
         background-color: var(--primary-color);
         display: flexbox;
         padding: 12px 19px 12px 19px;
@@ -275,7 +275,7 @@ nav{
     .goals_box a{
         background-color: var(--primary-color);
         text-decoration: none;
-        color: white;
+        color: white !important;
         padding: 10px 60px 10px 60px;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 17px;
@@ -324,7 +324,7 @@ nav{
     #anniversary_box a{
         background-color: var(--primary-color);
         text-decoration: none;
-        color: white;
+        color: white !important;
         padding: 10px 20px 10px 20px;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 17px;
