@@ -13,8 +13,27 @@
 </head>
 <body>
 
-<!--HEADER-->
+<!--COUPON CODE-->
 
+    <div id="coupon_container">
+        <div onclick="closecoupon()" class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>   
+        </div>
+        <img id="coupon_icon" src="coupon_icon.webp" alt="coupen-icon">   
+        <h3><button id="off">20% off</button> on Puma Shoes</h3>
+        <h3>Using HDFC and SBI Credit Card</h3>
+        <div class="coupon_row">
+            <span id="cpnCode">SHOES2023</span>
+            <span id="cpnBtn">COPY CODE</span>
+        </div>
+        <p>Valid Till : 10 May, 2023</p>     
+    </div>
+
+
+<!--HEADER-->
+<div id="main">
     <header>
         <div id="head">
             <h4>EXTRA 5% INSTANT DISCOUNT FOR ALL ONLINE PAYMENTS. FREE DELIVERY. FREE RETURNS.</h4>
@@ -273,10 +292,12 @@
             </div>
         </div>
     </footer>
+</div>
 
 <!--Java script-->
 
     <script>
+
         var icon = document.getElementById("moon");
         icon.onclick = function(){
             document.body.classList.toggle("dark-mode");
@@ -286,6 +307,30 @@
                 icon.src = "moon.png";
             }
         }
+
+        var cpnBtn = document.getElementById("cpnBtn");
+        var cpnCode = document.getElementById("cpnCode");
+        cpnBtn.onclick = function(){
+            navigator.clipboard.writeText(cpnCode.innerHTML);
+            cpnBtn.innerHTML = "COPIED !";
+            setTimeout(function(){
+                cpnBtn.innerHTML = "COPY CODE";
+            }, 5000)
+        }
+        
+        window.onload = loadcoupon();
+
+
+        function loadcoupon(){
+        document.getElementById('coupon_container').style.visibility = 'visible';
+        document.getElementById('main').style.opacity = '0.3';
+        }
+
+        function closecoupon(){
+        document.getElementById('coupon_container').style.visibility = 'hidden';
+        document.getElementById('main').style.opacity = '1'
+        }
+
     </script>
 
 </body>
