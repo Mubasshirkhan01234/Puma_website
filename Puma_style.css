@@ -147,7 +147,7 @@ nav{
     cursor: pointer;
     width: 20px;
     float: right;
-    padding: 20px;
+    padding: 5px;
 }
 
 .left{
@@ -270,28 +270,6 @@ nav{
         margin-left: 5%;
         border-radius: 5px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    #summer_box{
-        float: right;
-        margin: 10px 16px 0 0;
-    }
-
-    #summer_head{
-        color: #956fca;
-        font-size: 30px;
-        font-weight: bold;
-        display: block;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-
-    #year{
-        color: #097161;
-        font-size: 30px;
-        font-weight: bold;
-        line-height: 2;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        margin-left: 78px;
     }
 
     /*Top and trending section*/
@@ -644,18 +622,6 @@ footer{
         border-radius: 4px;
         margin-left: 10px;
     }
-    #summer_box {
-        width: 20%;
-        height: 40px;
-        margin-right: 5px;
-    }
-    #summer_head {
-        font-size: 25px;
-    }
-    #year{
-        font-size: 25px;
-        margin-left: 67px;
-    }
     .scroll_head{
         font-size: 25px;
         padding: 0px 0 0 20px;
@@ -749,9 +715,6 @@ footer{
 }
 
 @media screen and (max-width: 997px){
-    #summer_head {
-        font-size: 24px;
-    }
     #firstimg_head2 {
         font-size: 21px;
         margin-left: 15px;
@@ -827,13 +790,6 @@ footer{
     #yellow_block h2{
         font-size: 20px;
     }
-    #summer_head {
-        font-size: 22px;
-    }
-    #year {
-        font-size: 25px;
-        margin-left: 60px;
-    }
     #firstimg_head{
         font-size: 23px;
     }
@@ -879,13 +835,6 @@ footer{
         font-size: 11px;
         padding: 6px 11px 6px 11px;
     }
-    #summer_head {
-        font-size: 20px;
-    }
-    #year {
-        font-size: 22px;
-        margin-left: 50px;
-    }
     #right_list_support{
         margin-top: -150px;
     }
@@ -898,16 +847,6 @@ footer{
     }
     #firstimg_container {
         height: 441px;
-    }
-    #summer_box{
-        margin-right: 10px;
-    }
-    #summer_head {
-        font-size: 18px;
-    }
-    #year {
-        font-size: 20px;
-        margin-left: 45px;
     }
     #firstimg_head {
         font-size: 17px;
@@ -975,16 +914,6 @@ footer{
     #firstimg_container {
         height: 363px;
     }
-    #summer_head {
-        font-size: 16px;
-    }
-    #year {
-        font-size: 18px;
-        margin-left: 39px;
-    }
-    #summer_box {
-        margin-right: 20px;
-    }
     #firstimg_head {
         font-size: 16px;
     }
@@ -997,13 +926,6 @@ footer{
 @media screen and (max-width: 570px){
     #firstimg_container {
         height: 311px;
-    }
-    #summer_head {
-        font-size: 13px;
-    }
-    #year {
-        font-size: 16px;
-        margin-left: 30px;
     }
     #firstimg_box {
         margin: 37% 0 10px 10px;
@@ -1168,3 +1090,28 @@ body{
     color: var(--secondary-color);
 }  
 /* DARK MODE */
+
+/* GEO LOCATION WITH WEATHER */
+#weather_body{
+    backdrop-filter: blur(100px);
+    height: 120px;
+    width: 140px;
+    float: right;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid 1px white;
+}
+/* .weather_icon img{
+    height: 55px;
+    width: 55px;
+} */
+#temperature, #location{
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    justify-content: center;
+    /* padding: auto; */
+    font-size: larger;
+    margin: none;
+}
