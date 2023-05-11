@@ -78,10 +78,10 @@
             </div>
         </div>
         <div id="weather_body" onload="geolocation()">
-            <img src="moon.png" id="moon" alt="moon_image">
-            <!-- <div class="weather_icon">
+            <img src="off_bulb.png" id="moon" alt="moon_image">
+            <div class="weather_icon">
                 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
-            </div> -->
+            </div>
             <p id="temperature"></p>
             <p id="location"></p>
         </div>
@@ -310,9 +310,9 @@
         icon.onclick = function(){
             document.body.classList.toggle("dark-mode");
             if(document.body.classList.contains("dark-mode")){
-                icon.src = "sun.png";
+                icon.src = "on_bulb.png";
             }else{
-                icon.src = "moon.png";
+                icon.src = "off_bulb.png";
             }
         }
 
